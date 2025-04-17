@@ -1,13 +1,48 @@
 @import "tailwindcss";
+/* @tailwind utilities; */
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+@theme {
+  --color-primary-50: #FAF7EF;
+  --color-primary-100: #f5eedd; /* Main primary color */
+  --color-primary-200: #F1E7D0;
+  --color-primary-300: #EDDFC0;
+  --color-primary-400: #E8D7B0;
+  --color-primary-500: #E3CFA0;
+  --color-primary-600: #DFC790;
+  --color-primary-700: #DABF81;
+  --color-primary-800: #D6B771;
+  --color-primary-900: #D1AF61;
+
+  --color-secondary-50: #BCF0E7;
+  --color-secondary-100: #ABEDE1;
+  --color-secondary-200: #9BE9DB;
+  --color-secondary-300: #8AE5D5;
+  --color-secondary-400: #7AE2CF;  /* Base color */
+  --color-secondary-500: #68DEC8;
+  --color-secondary-600: #58DAC2;
+  /* --color-secondary-700: #47D7BC; */
+  --color-secondary-800: #36D3B6;
+  --color-secondary-900: #2CC9AC;
+  --color-secondary-950: #077A7D;
+  
+  /* --color-primary: #F5EEDD;
+  --color-secondary: #7AE2CF; */
+  --color-secondary-hover: #077A7D;
+
+  --color-text: #06202B;
+  --text-primary: var(--color-primary-text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -19,8 +54,14 @@
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: var(--background);
+  color: var(--foreground); */
 }
