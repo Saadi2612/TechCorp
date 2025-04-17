@@ -30,11 +30,11 @@ const CompanyStory = () => {
                 What started as a small team of developers has grown into a full-service digital transformation company, serving clients across the globe.
               </p>
               <p>
-                Today, we're proud to be at the forefront of technological innovation, helping businesses navigate the digital landscape and achieve their full potential.
+                Today, we&apos;re proud to be at the forefront of technological innovation, helping businesses navigate the digital landscape and achieve their full potential.
               </p>
             </div>
           </div>
-          
+
             <div className="rounded-xl overflow-hidden shadow-xl bg-text p-8">
               {/* <div className="absolute inset-0 bg-grid-primary-900/[0.03] bg-[size:20px_20px]" /> */}
               <div className="relative h-full flex items-center justify-center">

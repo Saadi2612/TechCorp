@@ -85,7 +85,7 @@ const MetricsSection = () => {
             Our Impact in Numbers
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Through dedication and expertise, we've achieved significant milestones and delivered exceptional results.
+            Through dedication and expertise, we&apos;ve achieved significant milestones and delivered exceptional results.
           </p>
         </motion.div>
 

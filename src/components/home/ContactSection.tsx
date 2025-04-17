@@ -28,6 +28,7 @@ const ContactSection = () => {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
+    console.log(data);
     setIsSubmitting(true);
     try {
       // Here you would typically send the data to your backend
@@ -35,6 +36,7 @@ const ContactSection = () => {
       setSubmitStatus('success');
       reset();
     } catch (error) {
+      console.error('Error submitting form:', error);
       setSubmitStatus('error');
     }
     setIsSubmitting(false);
@@ -51,7 +53,7 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-text mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Ready to transform your ideas into reality? Get in touch with us today.
@@ -146,7 +148,7 @@ const ContactSection = () => {
 
           {submitStatus === 'success' && (
             <div className="mt-6 p-4 bg-green-50 text-green-700 rounded-lg text-center">
-              Thank you for your message! We'll get back to you soon.
+              Thank you for your message! We&apos;ll get back to you soon.
             </div>
           )}
 

@@ -83,7 +83,7 @@ const ServiceDetail = () => {
 
   const fadeInAnimationVariants = {
     initial: (index:number) => ({ opacity: 0, x: index % 2 === 0 ? -50 : 50 }),
-    animate: (index: number) => ({ opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.5 } }),
+    animate: { opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.5 } },
   };
 
   return (

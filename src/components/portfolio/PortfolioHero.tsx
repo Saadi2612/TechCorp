@@ -16,7 +16,7 @@ const PortfolioHero = () => {
             Our <span className="text-text">Portfolio</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
-            Explore our successful projects and see how we've helped businesses achieve their digital goals.
+            Explore our successful projects and see how we&apos;ve helped businesses achieve their digital goals.
           </p>
         </motion.div>
       </div>

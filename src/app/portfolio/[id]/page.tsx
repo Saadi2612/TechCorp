@@ -169,8 +169,14 @@ const projects = {
   },
 };
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  const project = projects[params.id as keyof typeof projects];
+type ProjectPageProps = {
+  params: Promise<{ id: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+};
+
+export async function generateMetadata({ params }: ProjectPageProps) {
+  const {id} = await params
+  const project = projects[id as keyof typeof projects];
   if (!project) return {};
 
   return {
@@ -179,8 +185,9 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects[params.id as keyof typeof projects]
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { id } = await params;
+  const project = projects[id as keyof typeof projects]
 
   if (!project) {
     notFound();
