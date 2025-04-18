@@ -38,7 +38,7 @@ const CompanyStory = () => {
             <div className="rounded-xl overflow-hidden shadow-xl bg-text p-8">
               {/* <div className="absolute inset-0 bg-grid-primary-900/[0.03] bg-[size:20px_20px]" /> */}
               <div className="relative h-full flex items-center justify-center">
-                <div className="text-6xl font-bold bg-gradient-to-b from-primary-400 to-secondary-400 text-transparent bg-clip-text">TechCorp</div>
+                <div className="text-6xl font-bold bg-gradient-to-b from-primary from-30% to-primary/50 text-transparent bg-clip-text">TechCorp</div>
               </div>
             </div>
             {/* <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary-500/10 rounded-full blur-2xl" /> */}

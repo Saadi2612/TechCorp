@@ -99,13 +99,13 @@ const ServiceDetail = () => {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-primary-100 md:p-10 p-6 rounded-xl"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-secondary-100 md:p-10 p-6 rounded-xl"
             >
               <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <div className="text-secondary-950 mb-6">
+                <div className="text-primary mb-6">
                   {service.icon}
                 </div>
-                <h2 className="text-3xl font-bold text-text mb-4">
+                <h2 className="text-3xl font-bold text-primary mb-4">
                   {service.title}
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
@@ -114,17 +114,17 @@ const ServiceDetail = () => {
                 <ul className="space-y-3">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-gray-600">
-                      <span className="h-2 w-2 bg-primary-500 rounded-full mr-3" />
+                      <span className="h-2 w-2 bg-secondary rounded-full mr-3" />
                       {feature}
                     </li>
                   ))}
                 </ul>
               </div>
               <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                <div className="rounded-xl overflow-hidden bg-text p-8">
+                <div className="rounded-xl overflow-hidden bg-text p-8 ">
                   {/* <div className="absolute inset-0 bg-grid-primary-900/[0.03] bg-[size:20px_20px]" /> */}
                   <div className="relative h-full flex items-center justify-center">
-                    <div className="md:text-6xl text-4xl font-bold bg-gradient-to-b from-primary-400 to-secondary-400 text-transparent bg-clip-text">{service.title}</div>
+                    <h1 className="md:text-6xl text-4xl font-bold bg-gradient-to-b from-primary from-30% to-primary/50 text-transparent bg-clip-text leading-[72px]">{service.title}</h1>
                   </div>
                 </div>
               </div>

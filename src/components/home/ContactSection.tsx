@@ -52,7 +52,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-text mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-text-black mb-4">
             Let&apos;s Work Together
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -70,7 +70,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="name"
-                  className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent ${
+                  className={`w-full px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent ${
                     errors.name ? 'border-red-500' : 'border-gray-300'
                   }`}
                   {...register('name', { required: 'Name is required' })}
@@ -87,7 +87,7 @@ const ContactSection = () => {
                 <input
                   type="email"
                   id="email"
-                  className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent ${
+                  className={`w-full px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent ${
                     errors.email ? 'border-red-500' : 'border-gray-300'
                   }`}
                   {...register('email', {
@@ -111,7 +111,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 id="company"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent"
                 {...register('company')}
               />
             </div>
@@ -123,7 +123,7 @@ const ContactSection = () => {
               <textarea
                 id="message"
                 rows={4}
-                className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent ${
+                className={`w-full px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-secondary-500 focus:border-transparent ${
                   errors.message ? 'border-red-500' : 'border-gray-300'
                 }`}
                 {...register('message', { required: 'Message is required' })}
@@ -137,8 +137,8 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`px-8 py-3 bg-secondary-400 text-text rounded-lg font-medium w-full 
-                  ${isSubmitting ? 'opacity-75 cursor-not-allowed' : 'hover:bg-secondary-500'} 
+                className={`px-8 py-3 bg-primary text-text-white rounded-lg font-medium w-full 
+                  ${isSubmitting ? 'opacity-75 cursor-not-allowed' : 'hover:bg-primary/90'} 
                   transition-colors duration-200 cursor-pointer`}
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}

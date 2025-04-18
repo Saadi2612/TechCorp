@@ -74,7 +74,7 @@ const ServicesOverview = () => {
     <section className="py-20 bg-white" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-text mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-text-black mb-4">
             Our Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -93,9 +93,9 @@ const ServicesOverview = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group p-6 bg-secondary-400 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-2 duration-300 border border-gray-100 hover:border-gray-200"
+              className="group p-6 bg-secondary-100 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-2 duration-300 border border-gray-100 hover:border-gray-200"
             >
-              <div className="text-secondary-950 mb-4 group-hover:text-text/90 transition-colors duration-300">
+              <div className="text-primary/80 mb-4 group-hover:text-text/90 transition-colors duration-300">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold text-text mb-2">

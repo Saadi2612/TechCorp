@@ -26,7 +26,7 @@ const RelatedProjects = ({ currentProjectId, category, allProjects }: RelatedPro
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-semibold text-secondary-950 mb-8">Related Projects</h2>
+        <h2 className="text-2xl font-semibold text-primary mb-8">Related Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {relatedProjects.map((project) => (
             <motion.div
@@ -36,8 +36,8 @@ const RelatedProjects = ({ currentProjectId, category, allProjects }: RelatedPro
               transition={{ duration: 0.5 }}
             >
               <Link href={`/portfolio/${project.id}`}>
-                <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
-                  <h3 className="text-lg font-semibold text-secondary-900 mb-2 hover:text-primary-600 transition-colors">
+                <div className="bg-white rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 duration-300 p-6">
+                  <h3 className="text-lg font-semibold text-secondary-600 mb-2 hover:text-primary transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-sm text-gray-600 mb-4">

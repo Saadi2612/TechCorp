@@ -48,8 +48,8 @@ const TableOfContents = () => {
             href={`#${id}`}
             className={`block text-sm py-1 duration-150 ${
               activeSection === id
-                ? 'text-primary-600 font-medium'
-                : 'text-gray-600 hover:text-primary-600 -translate-x-2'
+                ? 'text-secondary-600 font-medium'
+                : 'text-gray-600 hover:text-secondary-600 -translate-x-2'
             }`}
             onClick={(e) => {
               e.preventDefault();

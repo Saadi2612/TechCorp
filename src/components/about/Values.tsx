@@ -33,7 +33,7 @@ const Values = () => {
   });
 
   return (
-    <section className="py-20 bg-primary-50">
+    <section className="py-20 bg-secondary-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -42,7 +42,7 @@ const Values = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-text mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-text-black mb-4">
             Our Values
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -59,7 +59,7 @@ const Values = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="text-primary-500 mb-4">
+              <div className="text-primary mb-4">
                 {value.icon}
               </div>
               <h3 className="text-xl font-semibold text-text mb-2">

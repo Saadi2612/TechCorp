@@ -8,7 +8,7 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <div className="relative">
-        <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-primary/15 to-transparent" />
+        {/* <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-primary/15 to-transparent" /> */}
         <ServicesOverview />
       </div>
       <MetricsSection />

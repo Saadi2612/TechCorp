@@ -20,7 +20,7 @@ const ProjectNavigation = ({ currentProjectId, allProjects }: ProjectNavigationP
   const nextProject = currentIndex < allProjects.length - 1 ? allProjects[currentIndex + 1] : null;
 
   return (
-    <nav className="border-t border-gray-200 mt-16 pt-8">
+    <nav className="border-t border-secondary-100 mt-16 pt-8">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {prevProject ? (
@@ -32,13 +32,13 @@ const ProjectNavigation = ({ currentProjectId, allProjects }: ProjectNavigationP
             >
               <Link
                 href={`/portfolio/${prevProject.id}`}
-                className="group flex items-center text-gray-600 hover:text-secondary-600"
+                className="group flex items-center text-gray-600 hover:text-primary"
               >
                 <FaArrowLeft className="mr-2 transition-transform group-hover:-translate-x-1" />
                 <div>
                   <div className="text-sm text-gray-500">Previous Project</div>
                   <div className="font-medium">{prevProject.title}</div>
-                  <div className="text-sm text-primary-500">{prevProject.category}</div>
+                  <div className="text-sm text-secondary-600">{prevProject.category}</div>
                 </div>
               </Link>
             </motion.div>
@@ -49,7 +49,7 @@ const ProjectNavigation = ({ currentProjectId, allProjects }: ProjectNavigationP
           <div className="mx-4">
             <Link
               href="/portfolio"
-              className="text-primary-600 hover:text-primary-800 font-medium"
+              className="text-secondary-600 hover:text-secondary-600/80 font-medium"
             >
               All Projects
             </Link>
@@ -64,12 +64,12 @@ const ProjectNavigation = ({ currentProjectId, allProjects }: ProjectNavigationP
             >
               <Link
                 href={`/portfolio/${nextProject.id}`}
-                className="group flex items-center justify-end text-gray-600 hover:text-secondary-600"
+                className="group flex items-center justify-end text-gray-600 hover:text-primary"
               >
                 <div>
                   <div className="text-sm text-gray-500">Next Project</div>
                   <div className="font-medium">{nextProject.title}</div>
-                  <div className="text-sm text-primary-500">{nextProject.category}</div>
+                  <div className="text-sm text-secondary-600">{nextProject.category}</div>
                 </div>
                 <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
               </Link>
